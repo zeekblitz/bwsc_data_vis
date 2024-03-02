@@ -8,10 +8,6 @@
     body {
         margin: 0;
         padding: 0;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Boston_ONS_Neighborhoods.svg/1280px-Boston_ONS_Neighborhoods.svg.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -22,9 +18,20 @@
         text-align: center;
         font-family: Arial, sans-serif;
     }
+    svg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 </style>
 </head>
 <body>
+    <svg viewBox="0 0 1280 937" xmlns="http://www.w3.org/2000/svg">
+        <image href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Boston_ONS_Neighborhoods.svg/1280px-Boston_ONS_Neighborhoods.svg.png" width="1280" height="937" />
+    </svg>
     <h1>Neighborhoods in Boston</h1>
 </body>
 </html>
